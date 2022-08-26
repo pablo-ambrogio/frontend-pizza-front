@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+:root {
+    --color-bg: #222222;
+    --color-red: #FC200C;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/*
+ * header
+*/
+
+.container {
+    width: 100%;
+    height: 100px;
+    padding: 1rem 3rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    background: var(--color-bg);
+}
+
+.nav__items {
+    display: flex;
+    column-gap: 2.5rem;
+}
+
+.nav__item {
+    list-style: none;
+}
+
+.nav__text {
+    text-decoration: none;
+    color: #fff;
+}
+
+
+/*
+  * main
+*/
+
+.main {
+    background: #E5E5E5;
+}
+
+.container-main {
+    width: 90%;
+    max-width: 1200px;
+    height: 80vh;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    column-gap: .5rem;
+}
+
+.delivery {
+    width: 50%;
+    height: 400px;
+    background: url(../img/delivery.jpg) no-repeat center / cover;
+
+    position: relative;
+
+    border-radius: .5rem;
+}
+
+.delivery__title {
+    color: #fff;
+
+    padding-top: 1.2rem;
+    padding-left: 2rem;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.delivery__title--red {
+    color: var(--color-red);
+}
+
+.podio {
+    width: 50%;
+    height: 400px;
+    background: #fff;
+    border-radius: .5rem;
+}
+
+.podio__title {
+    color: var(--color-red);
+    padding-top: 1.1rem;
+    text-align: center;
+}
+
+.container__podio {
+    height: 60%;
+    margin-top: 2.5rem;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    column-gap: 8rem;
+}
+
+.top__items {
+    margin-top: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    row-gap: .5rem;
+}
+
+.top__item {
+    font-weight: bold;
+}
+
+.top__text {
+    text-decoration: none;
+    color: #000;
+}
+
+/*
+ * footer
+ */
+
+.container--footer {
+    flex-direction: row-reverse;
+    height: auto;
+    padding: 2rem 3rem;
+}
+
+.nav__items--footer {
+    flex-direction: column;
+    row-gap: 1rem;
+}
